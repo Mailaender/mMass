@@ -18,19 +18,19 @@ homepage = "https://github.com/dreamingspires/mMass"
 repository = "https://github.com/dreamingspires/mMass"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-numpy = "^1.19.0"
-wxPython = "^4.1.0"
-xdgenvpy = "^2.3.3"
-requests = "^2.25.1"
+python = { version = "^3.7", system = true }
+numpy = { version = "^1.19.0", system = true }
+wxPython = { version = "^4.1.0", system = true }
+xdgenvpy = { version = "^2.3.3", system = true }
+requests = { version = "^2.25.1", system = true }
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
-pyinstaller = "^4.0"
+pytest = { version = "^5.2", system = true }
+pyinstaller = { version = "^4.0", system = true }
 pywin32 = { version = "^228", platform = "win32" }
-black = "^20.8b1"
+black = { version = "^20.8b1", system = true }
 py2app = { version = "^0.23", platform = "darwin" }
-auditwheel = { version = "^3.3.1", platform = "linux" }
+auditwheel = { version = "^3.3.1", platform = "linux", system = true }
 
 [tool.poetry.scripts]
 mmass = "mmass:main"
